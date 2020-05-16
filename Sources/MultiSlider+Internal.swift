@@ -172,6 +172,7 @@ extension MultiSlider {
     func addValueLabel(_ i: Int) {
         guard valueLabelPosition != .notAnAttribute else { return }
         let valueLabel = UITextField()
+        valueLabel.textColor = .white
         valueLabel.borderStyle = .none
         slideView.addSubview(valueLabel)
         valueLabel.translatesAutoresizingMaskIntoConstraints = false
